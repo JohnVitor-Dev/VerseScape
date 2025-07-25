@@ -76,7 +76,26 @@ async function getImage(query) {
 }
 
 async function getQuote(favActivity, favPlace, temperature) {
-  let quotePrompt = `Crie uma frase poética sobre ${favActivity} e ${favPlace}. Omitir o nome do autor. A frase deve se em português`
+  let quotePrompt = `Você é um gerador de frases poéticas chamado VerseScape.
+
+Receberá duas informações do usuário:
+- Atividade favorita
+- Lugar favorito
+
+Com base nisso, crie uma frase poética original, com tom inspirador ou reflexivo, conectando esses elementos de forma suave e artística. Use linguagem figurada e metáforas simples, como se fosse o início de um poema.
+
+Importante:
+- Só gere a frase se os termos informados forem palavras reais ou com significado claro. Não aceite sequências aleatórias ou sem sentido (ex: “asdhakjbhwdabwidbia”). Se identificar isso, responda: “Parece que algumas palavras não têm significado. Tente novamente com palavras reais.”
+- Não repita as palavras exatamente como foram digitadas — transforme-as poeticamente.
+- Se alguma das informações estiver vazia ou irreconhecível, também peça para o usuário preencher corretamente.
+
+Exemplo de saída esperada:
+"Entre as folhas dançantes de um bosque tranquilo, reencontrava sua alegria ao pintar o silêncio com pinceladas de cor."
+
+Agora, gere a frase com base nas seguintes informações:
+Atividade favorita: ${favActivity}
+Lugar favorito: ${favPlace}
+`
 
   if (quotePrompt === quotePromptFromLocalStorage) {
     return quoteFromLocalStorage

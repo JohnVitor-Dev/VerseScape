@@ -1,6 +1,6 @@
 # VerseScape
 
-VerseScape é um gerador de frases poéticas que cria um fundo e uma frase com base nas informações inseridas no arquivo `index.js`.
+VerseScape é um gerador de frases poéticas que cria um fundo e uma frase com base nas informações inseridas.
 
 ![VerseScape Preview](VerseScape-preview.png)
 
@@ -12,16 +12,13 @@ VerseScape é um gerador de frases poéticas que cria um fundo e uma frase com b
 
 ## Funcionalidades Futuras
 
-- [ ] **Inserção de Locais Personalizados:**
+- [X] **Inserção de Locais Personalizados:** 25-07-2025
    - Permitir que o usuário adicione seus próprios lugares favoritos, para personalizar ainda mais as frases poéticas e imagens geradas.
-
-- [ ] **Imagens Mais Correspondentes:**
-   - Implementar uma funcionalidade que busque imagens mais alinhadas com o local inserido pelo usuário, para garantir maior precisão e relevância visual.
 
 - [ ] **Histórico de Frases e Imagens:**
    - Criar um recurso que salve as frases e imagens geradas para que os usuários possam revisitar suas criações anteriores.
 
-- [ ] **Aprimoramento da Interface:**
+- [X] **Aprimoramento da Interface:** 25-07-2025
    - Desenvolver uma interface intuitiva para a seleção e inserção de atividades e locais.
 
 - [ ] **Opção de Compartilhamento:**

@@ -1,28 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Citações Poéticas</title>
     <link rel="stylesheet" href="index.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&Balsamiq+Sans&family=Cinzel&family=Inconsolata&family=Sora&Lobster&family=Metal+Mania&family=MuseoModerno&family=Noto+Sans+HK&family=Pacifico&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Balsamiq+Sans&family=Cinzel&family=Inconsolata&family=Sora&family=Lobster&family=Metal+Mania&family=MuseoModerno&family=Noto+Sans+HK&family=Pacifico&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <img class="avatar" src="avatar.png" />
+    <div class="inputContainer" id="inputContainer">
+        <h1>Gerador de Citações Poéticas</h1>
+        <div class="inputFields">
+            <p>Insira seu nome:</p>
+            <input type="text" id="author" placeholder="Nome do autor">
+            <p>Insira sua atividade favorita:</p>
+            <input type="text" id="activity" placeholder="Atividade favorita">
+            <p>Insira o seu lugar favorito:</p>
+            <input type="text" id="place" placeholder="Lugar favorito">
+        </div>
+        <button id="generate">Gerar</button>
+    </div>
+
+    <div class="fraseContainer" id="fraseContainer">
+        <img class="avatar" src="avatar.png" alt="Avatar">
         <div id="loader">
-            <img id="loader-img" src="loading.gif" />
-            <h3>Buscando frase &amp; imagem...</h3>
+            <img id="loader-img" src="loading.gif" alt="Carregando">
+            <h3 style="color: white;">Buscando frase &amp; imagem...</h3>
         </div>
+
         <div class="quote-wrapper">
-            <h2 class="quote"><span><span class="quote-span"></span></span></h2>
+            <h2 class="quote"><span class="quote-span"></span></h2>
         </div>
+
         <div class="name-wrapper">
-            <span><span class="name-span"></span></span>
+            <span class="name-span"></span>
         </div>
     </div>
+
     <script src="index.js" type="module"></script>
 </body>
 
